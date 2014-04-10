@@ -50,6 +50,7 @@ define composer::exec (
     command     => template('composer/exec.erb'),
     cwd         => $cwd,
     logoutput   => $logoutput,
-    refreshonly => $refreshonly
+    refreshonly => $refreshonly,
+    timeout     => 0
   }
 }
